@@ -1,0 +1,20 @@
+button{
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    border: 2px solid red ;
+    border-radius: 50%;
+    color: black;
+    background-color: orange;
+}
+button:hover{
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    border: 2px solid orange ;
+    border-radius: 50%;
+    color: black;
+    background-color: red;
+
+
+}
