@@ -3,8 +3,17 @@ console.log(musics);
 for (let i=0;musics.length;i++){
     musics[i].addEventListener("click",function(){
         let music = this.innerHTML;
-        makeSound(music);
+        //makeSound(music);
+        addStyle(music);
     })
+}
+function addStyle(name){
+    let activeEle = document.querySelector("."+name);
+    console.log(activeEle);
+    activeEle.classList.add("active");
+    setTimeout(function(){
+        activeEle.classList.remove("active");
+    },2000)
 }
 function makeSound(name){
     console.log(name);
@@ -23,6 +32,5 @@ function makeSound(name){
         let sound3 = new Audio("sound/Enrique-Iglesias-El-Bano-(Ft-Bad-Bunny).mp3");
         sound3.play();
         break;
-
     }
 }
